@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="css/timeline.css">
+    <title>Flexbox</title>
+    <head>
+        <body>
+
+            <style>
+                #blocks {
+                    display: flex;
+                    flex-direction: row;
+                }
+                
+                #block1 {
+                    flex: 2;
+                    order: 1;
+                    padding: 10px;
+                    background-color: blue;
+                    color: white;
+                }
+                
+                #block2 {
+                    flex: 2;
+                    order: 2;
+                    padding: 10px;
+                    background-color: gray;
+                    color: white;
+                }
+                
+                #block3 {
+                    flex: 1;
+                    order: 3;
+                    padding: 10px;
+                    background-color: yellow;
+                    color: white;
+                }
+                
+                #block4 {
+                    flex: 2;
+                    order: 4;
+                    padding: 10px;
+                    background-color: green;
+                    color: white;
+                }
+                
+                @media screen and (max-width: 700px) {
+                    #blocks {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            </style>
+        </head>
+        <body>
+
+<div id="blocks">
+	
+    <article id="block1"> 
+        <h2> article 1 </h2> 
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p> 
+    </article> 
+    
+    <article id="block2"> 
+        <h2> article 2 </h2> 
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p> 
+    </article> 
+    
+    <article id="block3"> 
+        <h2> article 3 </h2> 
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p> 
+    </article> 
+    
+    <article id="block4"> 
+        <h2> article 4 </h2> 
+        <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p> 
+    </article> 
+</div>
+</body>
+</html>

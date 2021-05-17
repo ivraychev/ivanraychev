@@ -1,0 +1,230 @@
+main {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    margin: 0px;
+    height: auto;
+}
+
+#landing {
+    background-color: #16e0bd;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0%;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 0;
+    color: darkblue;
+    padding: 10px;
+    margin: 20px;
+}
+
+#landingtext {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    text-align: center;
+}
+
+#landingimage {
+    background-image: url("images/Forest.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.btn1 {
+    border: 1px #ccc solid;
+    padding: 0.5em;
+    border-radius: 50px;
+    color: cadetblue;
+    background: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 1000ms ease;
+}
+
+.btn1:hover {
+    background-color: cornflowerblue;
+    color: azure;
+}
+
+.header {
+    background-color: burlywood;
+    text-align: center;
+    padding: 0.6rem;
+}
+
+.caption {
+    text-align: center;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+#formdiv {
+    width: 70%;
+    float: left;
+    border: 2px solid blue;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#addressDiv {
+    width: 26%;
+    float: left;
+    margin-top: 90px;
+    border: 2px solid blue;
+    padding: 5px;
+}
+
+.myForm {
+    padding: 20px;
+}
+
+.myForm label {
+    display: block;
+}
+
+.myForm input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 90%;
+    padding: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background-color: gray;
+    padding: 5px;
+    color: aqua;
+}
+
+.block {
+    width: 33.3%;
+    float: left;
+    border: 1px solid blue;
+    padding: 15px;
+    height: 500px;
+}
+
+#fix {
+    position: fixed;
+    margin: -100px;
+    top: 300px;
+}
+
+#icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#blocks{
+	display:flex;
+	flex-direction: row;
+}
+
+#block1{
+			flex: 1;
+			order: 3;
+			padding: 10px;
+			background-color: green;
+			color: white;
+		}
+		#block2{
+			flex: 1;
+			order: 2;
+			padding: 10px;
+			background-color: grey;
+			color: white;
+		}
+		#block3{
+			flex: 1;
+			order: 1;
+			padding: 10px;
+			background-color: pink;
+			color: black;
+		}
+
+
+@media screen and (max-width: 700px)
+{
+	
+	#blocks{
+	display:flex;
+	flex-direction: column;
+    } 
+	body{
+		background-color: grey;
+	}
+	
+	.block {
+    width: 100%;
+    float: none;
+    border: 1px solid blue;
+    padding: 10px;
+	height:auto;
+   }
+   
+   #formdiv, #addressDiv{
+    width: 100%;
+    float: none;
+    border: 2px solid blue;
+    padding: 5px;
+}
+
+#icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0%;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin: 0;
+    color: darkblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+#fix {
+    position: fixed;
+    margin: -40px;
+    top: 300px;
+	font-size: 0.7rem;
+}
